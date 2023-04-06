@@ -1,0 +1,26 @@
+{
+  "name": "text-editor-web-app",
+  "version": "1.0.0",
+  "description": "This is an application that allows users to create and edit text using a text editor interface. It features automatic saving to IndexedDB, an Install button for downloading the application, and proper build scripts for deployment.",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "concurrently --kill-others \"npm run client\" \"npm run server\"",
+    "start": "npm run build && npm run server",
+    "server": "node server.js",
+    "build": "webpack --mode production",
+    "install": "echo \"No installation required\"",
+    "client": "webpack-dev-server --mode development --open",
+    "test": "echo \"No tests available\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
