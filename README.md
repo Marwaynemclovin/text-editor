@@ -1,5 +1,15 @@
 # Text Editor Web Application
 
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [Installation and Usage](#installation-and-usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
 ## Description
 
 This is a web application that allows users to create and edit text using a rich text editor interface. It features automatic saving of content to IndexedDB, an Install button for downloading the application, and proper build scripts for deployment.
@@ -27,6 +37,29 @@ To use the text editor web application, follow these steps:
 2. Enter text or edit existing text in the editor.
 3. Click off the DOM window to save your changes to IndexedDB.
 4. Close and reopen the text editor to verify that your changes were saved and retrieved correctly.
+
+## Technologies
+
+This web application uses the following technologies:
+
+- JavaScript
+- HTML
+- CSS
+- Node.js
+- Express
+- Webpack
+- Workbox Webpack plugin
+
+## Contributing
+
+We welcome contributions from the community! To contribute, please follow these steps:
+
+1. Fork the repository to your own GitHub account.
+2. Clone the repository to your local machine.
+3. Create a new branch for your changes.
+4. Make your changes and commit them with descriptive commit messages.
+5. Push your changes to your forked repository.
+6. Submit a pull request to the original repository.
 
 ## License
 

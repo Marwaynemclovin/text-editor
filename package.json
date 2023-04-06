@@ -12,9 +12,8 @@
     "client": "webpack-dev-server --mode development --open",
     "test": "echo \"No tests available\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["text", "editor", "web", "application"],
+  "author": "Marwin Manlangit",
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4"
@@ -22,5 +21,9 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marwaynemclovin/text-editor"
   }
 }
