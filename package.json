@@ -4,23 +4,39 @@
   "description": "This is an application that allows users to create and edit text using a text editor interface. It features automatic saving to IndexedDB, an Install button for downloading the application, and proper build scripts for deployment.",
   "main": "server.js",
   "scripts": {
-    "start:dev": "concurrently --kill-others \"npm run client\" \"npm run server\"",
-    "start": "npm run build && npm run server",
-    "server": "node server.js",
-    "build": "webpack --mode production",
-    "install": "echo \"No installation required\"",
-    "client": "webpack-dev-server --mode development --open",
-    "test": "echo \"No tests available\""
+    "dev": "webpack-dev-server",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "client": "cd client && npm start"
   },
-  "keywords": ["text", "editor", "web", "application"],
+  "keywords": [
+    "text",
+    "editor",
+    "web",
+    "application"
+  ],
   "author": "Marwin Manlangit",
   "dependencies": {
-    "express": "^4.17.1",
-    "if-env": "^1.0.4"
+    "babel": "^6.23.0",
+    "express": "^4.18.2",
+    "idb": "^7.1.1",
+    "if-env": "^1.0.4",
+    "mini-css-extract-plugin": "^2.7.5"
   },
   "devDependencies": {
-    "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+    "babel-loader": "^9.1.2",
+    "concurrently": "^5.3.0",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2",
+    "webpack-pwa-manifest": "^4.3.0",
+    "workbox-webpack-plugin": "^6.5.4"
   },
   "repository": {
     "type": "git",

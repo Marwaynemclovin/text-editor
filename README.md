@@ -28,8 +28,9 @@ To install and run the text editor web application, follow these steps:
 1. Clone this repository to your local machine.
 2. Navigate to the project root directory.
 3. Run `npm install` to install dependencies.
-4. Run `npm run start` to start the backend and serve the client.
-5. Open your web browser and go to `http://localhost:3000` to access the text editor web application.
+4. Run `npm run build` to build relevant files.
+5. Run `npm start` to start the backend and serve the client.
+6. Open your web browser and go to `http://localhost:3001` to access the text editor web application.
 
 To use the text editor web application, follow these steps:
 
